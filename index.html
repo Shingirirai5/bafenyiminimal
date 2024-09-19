@@ -26,28 +26,36 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60">
     <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark" id="navbar-sticky">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky-dark" id="navbar-sticky">
         <div class="container">
             <!-- LOGO -->
             <a class="logo text-uppercase" href="index-1.html">
-                    <img  style="width: 150px;"  src="images/logoo.png" alt=""/>
-                </a>
+                <img style="width: 150px;" src="images/logoo.png" alt="" class="logo-dark" />
+                <img style="width: 150px;" src="images/logoo.png" alt="" class="logo-light" />
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button>
+                <i class="mdi mdi-menu"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Who we are</a>
+                        <a href="#about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#programs" class="nav-link">What we do</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav navbar-center">
+                  
                     <li class="nav-item">
                         <a href="#" class="btn btn-sm nav-btn" data-bs-toggle="modal" data-bs-target="#signupModal">Donate</a>
                     </li>
@@ -58,19 +66,42 @@
     <!-- Navbar End -->
 
     <!-- home-agency start -->
-    <section class="hero-3" id="home">
+    <section class="hero-1" id="home">
         <div class="bg-overlay-img"></div>
         <div class="container">
             <div class="row align-items-center hero-content">
                 <div class="col-lg-6">
-                   
-                    <p class="opacity-75 mb-4 fs-17">Bafenyi - is the Setswana word for “winners”. <br>Our heart is to see all people win regardless of their circumstances. 
-                    </p>
-                    <a href="javascript:void(0);" class="btn btn-lg btn-primary">Annual Reports</a>
+                    <h1 class="hero-title fw-bold mb-4 pb-3 text-white">Bafenyi Trust</h1>
+                    <p class="text-white opacity-75 mb-4 pb-3 fs-17">Bafenyi is the Setswana word for “winners”. <br>
+                        Our heart is to see all people win regardless of their circumstances.
+                        
+                        </p>
+                    <div class="subscribe-form me-lg-5 mb-5 mb-lg-0">
+                        <i class="mdi mdi-email-outline form-icon"></i>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Address" />
+                        <a href="javascript:void(0);" class="btn btn-success form-btn"><span>Annual Reports</span> <i class="mdi mdi-download download-icon"></i></a>
+                    </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <img  src="images/images-removebg-preview.png" alt="" class="img-fluid mt-5 mt-lg-0">
+                <div class="col-lg-6 text-center text-lg-end">
+                    <img src="images/heros/hero-1-img.png" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-bottom-shape">
+                        <img src="images/heros/hero-1-bottom-shape.png" alt="" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="down-arrow-btn">
+                        <a href="#about" class="down-arrow"><i class="mdi mdi-arrow-down"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,7 +109,7 @@
     <!-- home-agency end -->
 
     <!-- How it work start -->
-    <section class="section">
+    <section id="about" class="section">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8 col-lg-6 text-center">
@@ -127,33 +158,242 @@
     </section>
     <!-- How it work end -->
 
-    <!-- features start -->
-    <section class="section bg-light" id="features">
+    <section id="projects" class="section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8 col-lg-6 text-center">
-                    
-                    <h2 class="title">What we do</h2>
+                 
+                    <h2 class="title">What We Do</h2>
                    
                 </div>
             </div>
 
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img style="height: 400px;" src="images/download (1).jfif" alt="" class="img-fluid d-block mx-auto ms-lg-auto" />
+                <div class="col-lg-4">
+                    <img src="images/faq.png" alt="" class="img-fluid d-block mx-auto" />
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <p style="font-size: larger; font-weight: 600;"> Atisa </p>
-                    <p class="text-muted">We have 6 weekly discipleship groups where we minister the word of God and teach life skills to 300 adults. Our desire is to see our beneficiaries become responsible, kind, compassionate, and God-fearing individuals who will positively impact society.</p>
 
-                    
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="accordion accordion-flush faqs-accordion mt-4 mt-lg-0" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                                    Atisa Program (Adults)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    We have 6 weekly discipleship groups where we minister the word of God and teach life skills to 300 adults. Our desire is to see our beneficiaries become responsible, kind, compassionate, and God-fearing individuals who will positively impact society.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Kids Clubs
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    Recognizing that not all children are raised in nurturing environments, our Kids' Clubs provide a safe haven where children can experience love, enjoy a nutritious meal, and encounter God through biblical teachings. Our weekly Kids’ Clubs cater for children in Grade R-9 where they are taught through engaging biblical lessons, life skills training, and games. The kids clubs are in  4 different locations around Ikageng and Promosa each week. The children are also encouraged to develop their gifts through the talent development program.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    After-School Program
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    Mathematics and English are foundational subjects that support other areas of learning. Unfortunately, some of our children attending Primary school weren't able to read or comprehend content and apply basic numeracy methods.
+                                    The program supports learners from grade 3 - 7, every week from Mondays to Wednesdays for 2 hours a day.
+                                    Our heart is to see the learners gain confidence in themselves and graduate from the program with firmer foundations, and a deep desire to excel in every area of their lives.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Feeding Scheme
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    We feed 1300 people per week. Some of our beneficiaries will at times go to bed hungry due to various reasons. Hunger and malnutrition can hinder one’s ability to work or attend school so we are committed to serving them a nutritious meal.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    Winter Project
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    Caring for the less fortunate in the cold winter seasons is crucial for us. This project runs annually, where we partner with donors to buy winter essentials for those in need.
+Items such as, blankets, scarfs, socks, beanies and soup are received from donors.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    Christmas Project
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">
+                                    Christmas is often seen as a time for spending quality time with loved ones, when people come together, share meals and exchange gifts.
+It is also a time for us to celebrate our groups by expressing our love and appreciation towards them.
+During this time, we prepare a special meal for them and hand out Christmas gifts.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-header end -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!-- features end -->
 
     <!-- faqs end -->
+
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 col-lg-6 text-center">
+                    
+                    <h2 class="title">Get in Touch</h2>
+                    <p class="text-muted">We'd love to hear from you</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="flex-shrink-0">
+                            <img src="images/hello-icon.png" alt="..." height="80" class="" />
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h2 class="mb-0">Contact Us!</h2>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <div class="contact-icon bg-soft-primary text-primary">
+                                    <i class="mdi mdi-email"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0 fs-18">Email</h5>
+                            </div>
+                        </div>
+                        <p class="mb-1"><i class="mdi mdi-arrow-right-thin text-muted me-1"></i><a href="javascript:void(0);" class="text-secondary">admin@bafenyi.org.za</a></p>
+                    
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <div class="contact-icon bg-soft-primary text-primary">
+                                    <i class="mdi mdi-phone"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0 fs-18">Phone</h5>
+                            </div>
+                        </div>
+                        <p class="mb-1"><i class="mdi mdi-arrow-right-thin text-muted me-1"></i><a href="javascript:void(0);" class="text-secondary">	+27 78 060 7398</a></p>
+                
+                    </div>
+                    <div class="">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0">
+                                <div class="contact-icon bg-soft-primary text-primary">
+                                    <i class="mdi mdi-google-maps"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0 fs-18">Address</h5>
+                            </div>
+                        </div>
+                     
+                        <p class="mb-1"><i class="mdi mdi-arrow-right-thin text-muted me-1"></i><a href="javascript:void(0);" class="text-secondary">7/2170 Extention 2, Promosa, Potchefstroom 2531</a></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="card contact-form rounded-lg mt-4 mt-lg-0">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="formFirstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="formFirstName" placeholder="Your first name..." required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="formLastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="formLastName" placeholder="Last first name..." required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="formEmail" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="formEmail" placeholder="Your email..." required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="formPhone" class="form-label">Phone Number</label>
+                                            <input type="text" class="form-control" id="formPhone" placeholder="Type phone number..." required />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="formSubject" class="form-label">Subject</label>
+                                            <input type="text" class="form-control" id="formSubject" placeholder="Type subject..." required />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-4">
+                                            <label for="formMessages" class="form-label">Messages</label>
+                                            <textarea class="form-control" id="formMessages" rows="4" placeholder="Type messages..." required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-gradient-danger">Send Messages <i class="mdi mdi-send ms-1"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -166,7 +406,7 @@
                 <div class="col-lg-3 text-center text-lg-start">
                     <div class="footer-logo mb-4">
                         <a href="#">
-                                <img style="height: 50px;" src="images/photoroom.png" alt="" />
+                                <img style="height: 50px;" src="images/download3-Photoroom.png-Photoroom.png" alt="" />
                             </a>
                     </div>
 
@@ -220,7 +460,7 @@
                     <p class="text-white opacity-75 mb-0 fs-14">
                         <script>
                             document.write(new Date().getFullYear())
-                        </script> © Appexy - <a href="#" class="text-white">dot dev tech</a></p>
+                        </script> © Bafenyi - <a href="#" class="text-white">dot dev tech</a></p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="javascript:void(0);" class="text-white opacity-75 fs-14">Terms Conditions & Policy</a>
